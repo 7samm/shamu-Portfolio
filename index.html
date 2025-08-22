@@ -4,9 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shamu Portfolio</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Library for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- FontAwesome for social icons -->
+  <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <!-- ===== Navbar ===== -->
   <nav>
     <ul>
       <li><a href="#hero">Home</a></li>
@@ -16,30 +26,58 @@
     </ul>
   </nav>
 
+  <!-- ===== Hero Section ===== -->
   <section id="hero">
     <h1>Hello, I'm Shamu</h1>
     <p>Odoo & Python Developer | API Enthusiast</p>
+    <button onclick="scrollToProjects()">View Projects</button>
   </section>
 
+  <!-- ===== About Section ===== -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Experienced in Odoo, Python, APIs, HTML, CSS, JS.</p>
+    <img src="images\profile.jpeg" alt="Profile Picture" class="profile-pic">
+    <p>Experienced in Odoo, Python, API integration, HTML, CSS, and JS. Passionate about building interactive web apps and automated workflows.</p>
+
+    <!-- Skills -->
+    <div class="skills">
+      <div class="skill">
+        <p>Python</p>
+        <div class="progress"><div class="fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill">
+        <p>Odoo</p>
+        <div class="progress"><div class="fill" style="width:85%"></div></div>
+      </div>
+      <div class="skill">
+        <p>HTML/CSS/JS</p>
+        <div class="progress"><div class="fill" style="width:80%"></div></div>
+      </div>
+      <div class="skill">
+        <p>API Integration</p>
+        <div class="progress"><div class="fill" style="width:75%"></div></div>
+      </div>
+    </div>
   </section>
 
+  <!-- ===== Projects Section ===== -->
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-card">
+    <div class="project-card" data-aos="fade-up">
+      <img src="images\hsopital_erp.jpg" alt="Hospital Management System" class="project-img">
       <h3>Hospital Management System</h3>
       <p>Built in Odoo 16 for streamlined hospital operations.</p>
       <a href="#">View Project</a>
     </div>
-    <div class="project-card">
+    <div class="project-card" data-aos="fade-up">
+      <img src="images\car-service.png" alt="Car Service Center Workflow" class="project-img">
       <h3>Car Service Center Workflow</h3>
-      <p>Multi-brand car service management system.</p>
+      <p>Multi-brand car service management system built in Odoo.</p>
       <a href="#">View Project</a>
     </div>
   </section>
 
+  <!-- ===== Contact Section ===== -->
   <section id="contact">
     <h2>Contact</h2>
     <form id="contactForm">
@@ -48,8 +86,26 @@
       <textarea placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
   </section>
 
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 Shamu Portfolio</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
+  <script>
+    AOS.init(); // Initialize scroll animations
+  </script>
+
 </body>
 </html>
