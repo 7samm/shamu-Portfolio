@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shamu Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <p>Welcome to my personal website!</p>
-    </header>
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Shamu, an Odoo & Python Developer with 3.7 years of experience in building business solutions, APIs (FastAPI, GraphQL, REST), and web apps. I also enjoy working with HTML, CSS, and JavaScript.</p>
-    </section>
+  <section id="hero">
+    <h1>Hello, I'm Shamu</h1>
+    <p>Odoo & Python Developer | API Enthusiast</p>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Hospital Management System (Odoo)</li>
-            <li>Construction Management System (Odoo)</li>
-            <li>Car Service Center Workflow (Odoo 18)</li>
-            <li>Custom APIs using FastAPI & GraphQL</li>
-        </ul>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Experienced in Odoo, Python, APIs, HTML, CSS, JS.</p>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">My Profile</a></p>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Hospital Management System</h3>
+      <p>Built in Odoo 16 for streamlined hospital operations.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Car Service Center Workflow</h3>
+      <p>Multi-brand car service management system.</p>
+      <a href="#">View Project</a>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 My Portfolio</p>
-    </footer>
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
