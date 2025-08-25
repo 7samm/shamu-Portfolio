@@ -1,111 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
+  <style>
+  
+  div h3{
+    padding-left: 1.2rem;
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    padding-top: 1.2rem;
+  }
+
+  </style>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shamu Portfolio</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- AOS Library for scroll animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- FontAwesome for social icons -->
-  <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shamu P — Odoo Developer & Python Engineer</title>
+  <meta name="description" content="Portfolio of Shamu P — Odoo developer with 3.7 years' experience in Python, API integrations (FastAPI, GraphQL, REST), and modern web.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script defer src="./assets/js/main.js"></script>
 </head>
 <body>
+  <header class="site-header container">
+    <a class="brand" href="#top">Shamu<span class="accent">P</span></a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="btn btn-ghost" aria-label="Toggle dark mode">🌓</button>
+    </nav>
+  </header>
 
-  <!-- ===== Navbar ===== -->
-  <nav>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- ===== Hero Section ===== -->
-  <section id="hero">
-    <h1>Hello, I'm Shamu</h1>
-    <p>Odoo & Python Developer | API Enthusiast</p>
-    <button onclick="scrollToProjects()">View Projects</button>
-  </section>
-
-  <!-- ===== About Section ===== -->
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="images\profile.jpeg" alt="Profile Picture" class="profile-pic">
-    <p>Experienced in Odoo, Python, API integration, HTML, CSS, and JS. Passionate about building interactive web apps and automated workflows.</p>
-
-    <!-- Skills -->
-    <div class="skills">
-      <div class="skill">
-        <p>Python</p>
-        <div class="progress"><div class="fill" style="width:90%"></div></div>
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="accent">Shamu P</span> — Odoo Developer</h1>
+        <p class="lede">
+          3.7 years crafting Odoo apps & integrations for hospitals, construction, and asset management.
+          I build clean, reliable modules and APIs (FastAPI · GraphQL · REST) — plus tidy frontends with HTML/CSS/JS.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Hire Me</a>
+        </div>
+        <ul class="quick-facts">
+          <li>Odoo 16–18</li>
+          <li>Python</li>
+          <li>PostgreSQL</li>
+          <li>FastAPI</li>
+          <li>GraphQL</li>
+          <li>REST</li>
+        </ul>
       </div>
-      <div class="skill">
-        <p>Odoo</p>
-        <div class="progress"><div class="fill" style="width:85%"></div></div>
+      <div class="hero-card">
+        <div class="card">
+          <div class="card-body">
+            <p class="quote">“Great software is boring in production and exciting in delivery.”</p>
+            <div class="badges">
+              <span class="badge">Clean Architecture</span>
+              <span class="badge">Tested APIs</span>
+              <span class="badge">Responsive UI</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="skill">
-        <p>HTML/CSS/JS</p>
-        <div class="progress"><div class="fill" style="width:80%"></div></div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>
+        I'm an Odoo developer based in India. I’ve shipped custom modules and mobile apps (via controllers/APIs) and
+        interlinked them with standard Odoo flows. I care about maintainable code, clear UX, and measurable outcomes.
+      </p>
+      <div class="grid two">
+        <div>
+          <h3>What I do</h3>
+          <ul class="checklist">
+            <li>Odoo module design & customization</li>
+            <li>Service workflows (Job Cards → Delivery)</li>
+            <li>API development (FastAPI, GraphQL, REST)</li>
+            <li>DB modeling & performance tuning</li>
+            <li>Clean, responsive web UIs</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Highlights</h3>
+          <ul class="checklist">
+            <li>Hospital, Construction & Asset Management solutions</li>
+            <li>Multi-Brand Car Service module (Odoo 18)</li>
+            <li>Mobile apps consuming Odoo APIs</li>
+          </ul>
+        </div>
       </div>
-      <div class="skill">
-        <p>API Integration</p>
-        <div class="progress"><div class="fill" style="width:75%"></div></div>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2>Skills</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3 style="padding-left: 1.2rem;
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    padding-top: 1.2rem;">Core</h3>
+          <ul>
+            <li>Python, Odoo 16–18</li>
+            <li>PostgreSQL</li>
+            <li>HTML, CSS, JS</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>APIs</h3>
+          <ul>
+            <li>FastAPI</li>
+            <li>GraphQL</li>
+            <li>REST</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <ul>
+            <li>GitHub Pages</li>
+            <li>Jekyll/Static</li>
+            <li>CI/CD basics</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== Projects Section ===== -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card" data-aos="fade-up">
-      <img src="images\hsopital_erp.jpg" alt="Hospital Management System" class="project-img">
-      <h3>Hospital Management System</h3>
-      <p>Built in Odoo 16 for streamlined hospital operations.</p>
-      <a href="#">View Project</a>
-    </div>
-    <div class="project-card" data-aos="fade-up">
-      <img src="images\car-service.png" alt="Car Service Center Workflow" class="project-img">
-      <h3>Car Service Center Workflow</h3>
-      <p>Multi-brand car service management system built in Odoo.</p>
-      <a href="#">View Project</a>
-    </div>
-  </section>
+    
+    <section id="projects" class="container section">
+      <h2>Projects</h2>
+      <div class="projects grid two">
+        <article class="card project">
+          <div class="card-body">
+            <h3 style="padding-left: 0.0rem;">Hospital Management — ERP & Mobile App</h3>
+            <p>Developed complete hospital ERP flow with modules for appointments, in/out-patients, labs, pharmacy, and billing. Built GraphQL APIs powering the companion mobile app.</p>
+            <ul class="tags">
+              <li>Odoo</li><li>GraphQL</li><li>Mobile API</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="card-body">
+            <h3 style="padding-left: 0.0rem;">Marketplace Management — ERP & Mobile App</h3>
+            <p>End-to-end marketplace ERP with sales, purchase, chat, inventory, wallet & coupons, warehouse, and billing management. Integrated with payment gateway. GraphQL APIs used for mobile integration.</p>
+            <ul class="tags">
+              <li>ERP</li><li>GraphQL</li><li>Payments</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="card-body">
+            <h3 style="padding-left: 0.0rem;">Jewellery Mobile Application</h3>
+            <p>Mobile ERP app for jewellery management. Connected MSSQL with GraphQL, linking employee and manager dashboards with incentives and targets. FastAPI used as an interface program.</p>
+            <ul class="tags">
+              <li>Mobile App</li><li>GraphQL</li><li>FastAPI</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="card-body">
+            <h3 style="padding-left: 0.0rem;">Construction Management — ERP</h3>
+            <p>CRM-based construction ERP system with project/task tracking, BOQ/BOM estimation, expenses tracking, and profitability analysis. Included sales, purchase, accounting, and inventory flows.</p>
+            <ul class="tags">
+              <li>ERP</li><li>CRM</li><li>Construction</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <!-- ===== Contact Section ===== -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
 
-    <!-- Social Icons -->
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
-  </section>
+    <section id="experience" class="container section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <h3 style ="padding-top: 0.0rem;">Odoo Developer</h3>
+            <p>Built and customized Odoo modules, integrated APIs, and delivered responsive UIs.</p>
+            <span class="muted">3.7 years</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- ===== Footer ===== -->
-  <footer>
-    <p>&copy; 2025 Shamu Portfolio</p>
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <form class="contact-form" name="contact" method="post" data-netlify="true">
+        <div class="grid two">
+          <label> Name
+            <input type="text" name="name" required>
+          </label>
+          <label> Email
+            <input type="email" name="email" required>
+          </label>
+        </div>
+        <label> Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <div class="socials">
+        <a href="https://github.com/" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:hello@example.com" aria-label="Email">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2025 Shamu P · Built with clean HTML/CSS/JS · <a href="#top">Back to top</a></p>
   </footer>
-
-  <!-- JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
-  <script>
-    AOS.init(); // Initialize scroll animations
-  </script>
-
 </body>
 </html>
